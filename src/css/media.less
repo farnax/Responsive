@@ -1,0 +1,74 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .work__image {
+    .image_responsive(200px, 200px, 5% auto);   
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+  	font-size: 15px;
+  	.padding_block();
+  }
+  .logo__image, .skills__image, .about__image {
+  	display: none;
+  }
+  .header__nav {
+  	justify-content: center;
+  }
+  .work__item {
+  	.padding_block(2% 2%);
+  }
+  .services {
+    .text {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  .header__nav {
+  	display: none;
+  }
+   .menu-icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      .background_color(transparent);
+      border: none;
+      &:focus {
+      	outline: none;
+      }
+      img {
+      	width: 30px;
+      	height: 30px;
+      }
+   }
+   .block {
+   	.padding_block(2% 2%);
+   }
+   .work__button {
+   	display: block;
+   	margin: 0 auto;
+   }
+   .work__image {
+     .image_responsive(250px, auto, 0 auto);
+   }
+   .work__item:nth-child(n+3):nth-child(-n+8) {
+   	display: none;
+   }
+   .carousel {
+   	display: none;
+   }
+   .skills {
+     .custom-range {
+       display: none;
+     }
+     .skills__range {
+       margin-top: 0;
+     }
+   }
+}
